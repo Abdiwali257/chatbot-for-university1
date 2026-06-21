@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AcademiaAI - Academic Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#e0e3e5",
+                    "on-secondary-fixed-variant": "#5f4100",
+                    "on-secondary-fixed": "#271900",
+                    "on-tertiary-fixed-variant": "#434749",
+                    "on-surface-variant": "#43474e",
+                    "outline-variant": "#c4c6cf",
+                    "surface-container": "#e7eeff",
+                    "primary-fixed-dim": "#adc7f7",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#dee8ff",
+                    "surface-variant": "#d9e3f9",
+                    "background": "#f9f9ff",
+                    "on-tertiary-fixed": "#181c1e",
+                    "tertiary-container": "#323638",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f9f9ff",
+                    "inverse-on-surface": "#ebf1ff",
+                    "surface": "#f9f9ff",
+                    "secondary-container": "#ffc250",
+                    "on-primary-fixed": "#001b3c",
+                    "primary-fixed": "#d6e3ff",
+                    "surface-container-highest": "#d9e3f9",
+                    "tertiary": "#1d2123",
+                    "outline": "#74777f",
+                    "on-surface": "#121c2c",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#121c2c",
+                    "on-error-container": "#93000a",
+                    "surface-tint": "#455f88",
+                    "primary-container": "#1a365d",
+                    "on-primary-fixed-variant": "#2d476f",
+                    "primary": "#002045",
+                    "secondary-fixed": "#ffdeaa",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#273141",
+                    "inverse-primary": "#adc7f7",
+                    "surface-dim": "#d0daf0",
+                    "secondary-fixed-dim": "#f8bc4b",
+                    "secondary": "#7d5700",
+                    "on-secondary-container": "#725000",
+                    "on-primary-container": "#86a0cd",
+                    "on-tertiary-container": "#9b9fa1",
+                    "tertiary-fixed-dim": "#c3c7c9",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#f0f3ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-sm": "0.5rem",
+                    "gutter": "1.5rem",
+                    "stack-lg": "2.5rem",
+                    "stack-md": "1.5rem",
+                    "margin-mobile": "1rem",
+                    "container-max": "800px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Hanken Grotesk"],
+                    "label-lg": ["Hanken Grotesk"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "body-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-sm": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "headline-lg": ["30px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "30px", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Hanken Grotesk', sans-serif;
+            background-color: #f8fafc;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .assistant-card {
+            border-left: 4px solid #d69e2e;
+        }
+        .user-card {
+            background-color: #1a365d;
+            color: white;
+        }
+        .custom-shadow {
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.04);
+        }
+        /* Custom transitions for sidebar */
+        .sidebar-transition {
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .sidebar-collapsed .sidebar-label {
+            display: none;
+        }
+        .sidebar-collapsed .sidebar-header-toggle {
+            justify-content: center;
+        }
+        .sidebar-collapsed .sidebar-content {
+            align-items: center;
+        }
+        .sidebar-collapsed .sidebar-btn-text {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Top Navigation Bar -->
+<header class="w-full sticky top-0 bg-surface flex items-center justify-between px-gutter py-stack-sm max-w-full z-40 shadow-sm border-b border-outline-variant">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md font-bold text-primary">AcademiaAI</span>
+</div>
+<div class="hidden md:flex items-center gap-gutter">
+<nav class="flex items-center gap-stack-md text-on-surface-variant font-label-lg text-label-lg">
+<a class="px-2 py-1 hover:bg-surface-container-high transition-colors cursor-pointer" href="#">Home</a>
+<a class="px-2 py-1 hover:bg-surface-container-high transition-colors cursor-pointer" href="#">Dashboard</a>
+<a class="text-secondary font-bold border-b-2 border-secondary px-2 py-1 cursor-pointer" href="#">AI Tutor</a>
+<a class="px-2 py-1 hover:bg-surface-container-high transition-colors cursor-pointer" href="#">Pricing</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary-container p-2 rounded-full hover:bg-surface-container-high transition-colors">notifications</button>
+<div class="flex items-center gap-2 cursor-pointer active:opacity-80">
+<img alt="User Profile" class="w-8 h-8 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDegKiRBTed6hk6RujXc31DNGbT8-fTcSfB9fqdLmBqcMjmq-lgQuyKJuc-RiUaXNWSiSkiyWt8E6ICHvEV-tiOj8p0XZVO6Y7jq8GW6TJIsF4VZ2s8nCqAUFZH1WJt4yaOG-W2sx4bYbcZXoHUvc68AdIhgvr9b5coh2CPBgPy4FnsDaVBWYv8FX3pcc1NnUSDO61zFJ3Ztj1H0XUjrv99XhkNWFEdTi6qSZeDnpdwkVPPwpJL6uRLTYJljXi23YTMNgAgeXEuPMc"/>
+</div>
+</div>
+</header>
+<div class="flex min-h-[calc(100vh-64px)]">
+<!-- Sidebar Navigation -->
+<aside class="hidden lg:flex flex-col w-64 bg-surface-container-low p-margin-mobile gap-stack-md border-r border-outline-variant min-h-screen sidebar-transition" id="sidebar">
+<div class="flex flex-col h-full gap-stack-md min-h-full sidebar-content">
+<div class="flex items-center justify-between mb-2 sidebar-header-toggle">
+<h2 class="sidebar-label font-label-lg text-on-surface-variant uppercase tracking-wider text-[11px] font-bold">Menu</h2>
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-variant p-1 rounded-lg transition-colors" id="sidebar-toggle-btn" onclick="toggleSidebar()">chevron_left</button>
+</div>
+<button class="w-full py-3 bg-secondary text-on-secondary rounded-xl font-bold flex items-center justify-center gap-2 shadow-sm hover:opacity-90 active:scale-95 transition-all overflow-hidden">
+<span class="material-symbols-outlined shrink-0">add</span>
+<span class="sidebar-btn-text whitespace-nowrap">New Chat</span>
+</button>
+<div class="flex flex-col gap-1 overflow-hidden">
+<div class="flex items-center gap-3 p-3 text-on-surface-variant font-label-lg text-label-lg rounded-lg hover:bg-surface-variant transition-all cursor-pointer">
+<span class="material-symbols-outlined shrink-0">history</span>
+<span class="sidebar-btn-text font-bold whitespace-nowrap">Recent Activity</span>
+</div>
+<!-- Recent Chats List -->
+<div class="flex flex-col sidebar-label ml-4 border-l border-outline-variant/30">
+<a class="px-4 py-2 text-body-md text-on-surface-variant hover:text-primary transition-colors truncate" href="#">Algebra Basics</a>
+<a class="px-4 py-2 text-body-md text-on-surface-variant hover:text-primary transition-colors truncate" href="#">Data Science Help</a>
+<a class="px-4 py-2 text-body-md text-on-surface-variant hover:text-primary transition-colors truncate" href="#">Prompt Engineering</a>
+</div>
+</div>
+<div class="mt-auto">
+<a class="flex items-center gap-3 p-3 text-on-surface-variant font-label-lg text-label-lg rounded-lg hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined shrink-0">settings</span>
+<span class="sidebar-btn-text whitespace-nowrap">Settings</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto px-4 md:px-gutter py-stack-lg">
+<div class="max-w-[800px] mx-auto flex flex-col gap-stack-lg min-h-full">
+<!-- Welcome Section -->
+<section class="flex flex-col items-center text-center py-stack-lg animate-in fade-in slide-in-from-bottom-4 duration-700">
+<div class="w-20 h-20 bg-primary-container text-on-primary-container rounded-3xl flex items-center justify-center mb-6 shadow-xl relative overflow-hidden">
+<span class="material-symbols-outlined text-4xl relative z-10">school</span>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary to-transparent opacity-30"></div>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary mb-2">Welcome to the AcademiaAI</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">Your academic companion for personalized learning, research assistance, and complex problem-solving.</p>
+</section>
+<!-- Suggestion Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Algebra Card -->
+<button class="group p-6 bg-surface-container-lowest rounded-xl custom-shadow text-left border border-transparent hover:border-secondary transition-all flex flex-col gap-4">
+<div class="w-10 h-10 bg-surface-container-high rounded-lg flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">function</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Basics of Algebra</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Solving linear equations and quadratic formulas.</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors mt-auto self-end">arrow_forward</span>
+</button>
+<!-- Calculus Card -->
+<button class="group p-6 bg-surface-container-lowest rounded-xl custom-shadow text-left border border-transparent hover:border-secondary transition-all flex flex-col gap-4">
+<div class="w-10 h-10 bg-surface-container-high rounded-lg flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">calculate</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Data Science</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Limits, continuity, and probability distributions.</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors mt-auto self-end">arrow_forward</span>
+</button>
+<!-- AI Prompting Card -->
+<button class="group p-6 bg-surface-container-lowest rounded-xl custom-shadow text-left border border-transparent hover:border-secondary transition-all flex flex-col gap-4">
+<div class="w-10 h-10 bg-surface-container-high rounded-lg flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Prompt Engineering</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Mastering the art of expert academic queries.</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors mt-auto self-end">arrow_forward</span>
+</button>
+</div>
+<!-- Chat History Sample (Optional aesthetic anchor) -->
+<div class="flex flex-col gap-stack-md mt-auto">
+<div class="flex flex-wrap gap-2 justify-center mb-4">
+<span class="px-4 py-1.5 bg-surface-container-low text-on-surface-variant rounded-full text-label-lg font-label-lg hover:bg-surface-variant cursor-pointer transition-colors">How do I cite a paper?</span>
+<span class="px-4 py-1.5 bg-surface-container-low text-on-surface-variant rounded-full text-label-lg font-label-lg hover:bg-surface-variant cursor-pointer transition-colors">Explain Schrödinger's cat</span>
+<span class="px-4 py-1.5 bg-surface-container-low text-on-surface-variant rounded-full text-label-lg font-label-lg hover:bg-surface-variant cursor-pointer transition-colors">Exam schedule?</span>
+</div>
+<!-- Chat Input Field -->
+<div class="relative w-full mb-8">
+<div class="absolute inset-0 bg-secondary/5 blur-xl -z-10 rounded-full"></div>
+<div class="bg-surface-container-lowest rounded-2xl custom-shadow border border-outline-variant p-2 flex items-end gap-2 focus-within:border-secondary transition-all">
+<textarea class="w-full p-3 bg-transparent border-none focus:ring-0 resize-none font-body-lg text-body-lg max-h-48" id="chat-input" placeholder="Ask anything about your courses, research, or campus life..." rows="1"></textarea>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-xl font-bold flex items-center gap-2 hover:bg-on-secondary-container transition-all active:scale-95">
+                                Send
+                                <span class="material-symbols-outlined text-[18px]">north_east</span>
+</button>
+</div>
+<p class="text-[10px] text-center text-outline mt-3 uppercase tracking-widest font-semibold">Answers are generated by AcademiaAI for informational purposes only</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Mobile Navigation Bar -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-surface flex items-center justify-around py-2 px-4 border-t border-outline-variant z-50">
+<button class="flex flex-col items-center gap-1 p-2 text-on-surface-variant">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 p-2 text-secondary">
+<span class="material-symbols-outlined">psychology</span>
+<span class="text-[10px] font-bold">AI Tutor</span>
+</button>
+<button class="flex flex-col items-center gap-1 p-2 text-on-surface-variant">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-[10px] font-bold">Modules</span>
+</button>
+<button class="flex flex-col items-center gap-1 p-2 text-on-surface-variant">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-[10px] font-bold">Profile</span>
+</button>
+</nav>
+<script>
+        // Sidebar Toggle Logic
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const toggleBtn = document.getElementById('sidebar-toggle-btn');
+            
+            sidebar.classList.toggle('w-64');
+            sidebar.classList.toggle('w-20');
+            sidebar.classList.toggle('sidebar-collapsed');
+            
+            if (sidebar.classList.contains('sidebar-collapsed')) {
+                toggleBtn.innerText = 'chevron_right';
+            } else {
+                toggleBtn.innerText = 'chevron_left';
+            }
+        }
+
+        // Auto-expand textarea
+        const textarea = document.getElementById('chat-input');
+        textarea.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+
+        // Simple enter-to-send (optional)
+        textarea.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                this.value = '';
+                this.style.height = 'auto';
+            }
+        });
+    </script>
+</body></html>

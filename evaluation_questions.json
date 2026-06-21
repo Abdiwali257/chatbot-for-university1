@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What are the undergraduate admission requirements?",
+    "expected_source": "ADMISSION BROCHURE.pdf"
+  },
+  {
+    "question": "How much is the tuition fee?",
+    "expected_source": "TUTION FEES.pdf"
+  },
+  {
+    "question": "How does SIMAD calculate GPA?",
+    "expected_source": "Grading System and GPA.pdf"
+  },
+  {
+    "question": "What scholarships does SIMAD offer?",
+    "expected_source": "Scholarships.pdf"
+  },
+  {
+    "question": "Does SIMAD offer scholarships, and who qualifies for them?",
+    "expected_source": "Scholarships.pdf"
+  },
+  {
+    "question": "What courses are in first semester civil engineering?",
+    "expected_source": "Faculty of Engineering.xlsx"
+  },
+  {
+    "question": "What courses are offered in the MBBS program?",
+    "expected_source": "Faculty of Medicine and Health Science .xlsx"
+  },
+  {
+    "question": "What is SIMAD's history?",
+    "expected_source": "SIMAD HISTORY.pdf"
+  },
+  {
+    "question": "What campus services are available?",
+    "expected_source": "CAMPUS SERVICES.pdf"
+  },
+  {
+    "question": "What is FOC?",
+    "expected_source": "Faculty of Computing .xlsx"
+  },
+  {
+    "question": "What are the admissom requirments?",
+    "expected_source": "ADMISSION BROCHURE.pdf"
+  },
+  {
+    "question": "Does SIMAD have scholrships?",
+    "expected_source": "Scholarships.pdf"
+  },
+  {
+    "question": "Tell me the tution fees",
+    "expected_source": "TUTION FEES.pdf"
+  },
+  {
+    "question": "computr scince semster thre courses",
+    "expected_source": "Faculty of Computing .xlsx"
+  },
+  {
+    "question": "What support is available for disabled students?",
+    "expected_source": "Disability Support Services (DSS).pdf"
+  },
+  {
+    "question": "Tell me about SIMAD clubs",
+    "expected_source": "CLUBS.pdf"
+  },
+  {
+    "question": "What is SIMAD I-Lab?",
+    "expected_source": "SIMAD I-LAB.pdf"
+  },
+  {
+    "question": "What is the student code of conduct?",
+    "expected_source": "STUDENT CODE OF CONDUCT.pdf"
+  },
+  {
+    "question": "What accreditations and memberships does SIMAD have?",
+    "expected_source": "Accreditation, Ranking, & Memberships.pdf"
+  },
+  {
+    "question": "give me a information about simad",
+    "expected_source": "SIMAD UNIVERSITY GENERAL INFORMATION.pdf"
+  }
+]

@@ -1,0 +1,346 @@
+{
+  "retrieved_at": "2026-06-21",
+  "official_sources": {
+    "facebook_share_url_provided_by_user": "https://www.facebook.com/share/1LRjJXZgGC/",
+    "resolved_facebook_page": "https://www.facebook.com/simaduni1999",
+    "main_website": "https://simad.edu.so/",
+    "directus_api_base": "https://directus.simad.edu.so",
+    "notes": [
+      "The Facebook share URL resolved to the SIMAD Facebook page handle simaduni1999.",
+      "Facebook did not expose post text publicly in this environment; it required login/browser verification.",
+      "The data below is taken from SIMAD official website/API and official SIMAD school subdomains where accessible."
+    ]
+  },
+  "schools": [
+    {
+      "name": "School of Management Sciences",
+      "email": "fms@simad.edu.so",
+      "website": "https://fms.simad.edu.so/",
+      "slug": "school-of-management-sciences",
+      "programs": [
+        "Banking and Finance",
+        "Business Administration",
+        "Digital Marketing",
+        "Entrepreneurship and Innovation",
+        "Procurement and Logistics"
+      ],
+      "administration_status": "official faculty subdomain returned a PHP fatal error during extraction"
+    },
+    {
+      "name": "School of Accountancy",
+      "email": "fa@simad.edu.so",
+      "website": "https://fa.simad.edu.so/",
+      "slug": "school-of-accountancy",
+      "programs": [
+        "Accounting",
+        "Auditing",
+        "Taxation"
+      ],
+      "administration_status": "official faculty subdomain returned a PHP fatal error during extraction"
+    },
+    {
+      "name": "School of Computing",
+      "email": "foc@simad.edu.so",
+      "website": "https://foc.simad.edu.so/",
+      "slug": "school-of-computing",
+      "programs": [
+        "Computer Science",
+        "Graphics and Multimedia",
+        "Information Technology"
+      ],
+      "administration": [
+        {
+          "name": "Dr. Mohamed Hassan Ahmed",
+          "role": "Dean, Faculty of Computing"
+        },
+        {
+          "name": "Mr. Ubaid Mohamed Dahir",
+          "role": "Head, Department of Computer Science",
+          "phone": "0615632385",
+          "email": "engubaid@simad.edu.so"
+        },
+        {
+          "name": "Dr. Abdijaliil Abdullahi Mohamed",
+          "role": "Head, Department of Information Technology",
+          "phone": "0615338855",
+          "email": "cabdijaliil22@simad.edu.so"
+        },
+        {
+          "name": "Mr. Abdulaziz Yasin Nageye",
+          "role": "Head, Department of Graphics & Multimedia",
+          "email": "nageye8@simad.edu.so"
+        },
+        {
+          "name": "Mr. Mohamed Abdirahman Addow",
+          "role": "Coordinator, Faculty of Computing",
+          "phone": "0615632385",
+          "email": "engubaid@simad.edu.so"
+        },
+        {
+          "name": "Mr. Bashir Sheikh Abdullahi",
+          "role": "Coordinator, Cisco Office",
+          "phone": "0615338855",
+          "email": "cabdijaliil22@simad.edu.so"
+        },
+        {
+          "name": "Mr. Osman Mohamud Nur",
+          "role": "Coordinator, Labs",
+          "email": "nageye8@simad.edu.so"
+        },
+        {
+          "name": "Miski Abdullahi Daahir",
+          "role": "Secretary, Faculty of Computing",
+          "phone": "0615632385",
+          "email": "engubaid@simad.edu.so"
+        }
+      ],
+      "administration_source": "https://foc.simad.edu.so/administrationme/"
+    },
+    {
+      "name": "School of Social Sciences",
+      "email": "fass@simad.edu.so",
+      "website": "https://fass.simad.edu.so/",
+      "slug": "school-of-social-sciences",
+      "programs": [
+        "Developmental Studies",
+        "Political Science & International Relations",
+        "Public Administration",
+        "Social Work and Administration"
+      ],
+      "departments_from_deans_message": [
+        "Political Science and International Relations",
+        "Public Administration",
+        "Social Work and Social Administration",
+        "Psychology",
+        "Media and Communications",
+        "Development Studies"
+      ],
+      "administration": [
+        {
+          "name": "Dr. Abdulkadir Noor Jibril",
+          "role": "Dean, Faculty Of Social Science",
+          "email": "jabril@simad.edu.so"
+        },
+        {
+          "name": "Ahmed Mohamed Hassan",
+          "role": "Head, Political Science Department",
+          "email": "ahmed-fidow@simad.edu.so"
+        },
+        {
+          "name": "Hibo Ilyas Ahmed",
+          "role": "Head, Public Administration Department",
+          "email": "hiboilyas@simad.edu.so"
+        }
+      ],
+      "administration_source": "https://fass.simad.edu.so/administration/",
+      "deans_message_source": "https://fass.simad.edu.so/deans-message/"
+    },
+    {
+      "name": "School of Economics",
+      "email": "feco@simad.edu.so",
+      "website": "https://feco.simad.edu.so/",
+      "slug": "school-of-economics",
+      "programs": [
+        "Biostatistics",
+        "Economics",
+        "International Trade and Investment",
+        "Statistics and Planning"
+      ],
+      "administration": [
+        {
+          "name": "Mr Dahir Abdi Ali",
+          "role": "Dean, Faculty of Economics",
+          "email": "daahir@simad.edu.so"
+        },
+        {
+          "name": "Mr Ali Yusuf Hassan",
+          "role": "HOD, Economics",
+          "email": "ali.yusuf@simad.edu.so"
+        },
+        {
+          "name": "Mr Shuaib Mursal Ibrahim",
+          "role": "HOD, Statistics and Planning",
+          "email": "shuaib.mursal@simad.edu.so"
+        }
+      ],
+      "administration_source": "https://feco.simad.edu.so/administration/"
+    },
+    {
+      "name": "School of Education",
+      "email": "fedu@simad.edu.so",
+      "website": "https://fedu.simad.edu.so/",
+      "slug": "school-of-education",
+      "programs": [
+        "Education (Biology and Chemistry)",
+        "Education (English and Literature)",
+        "Education (Mathematics and Physics)"
+      ],
+      "administration_status": "official faculty subdomain returned a PHP fatal error during extraction"
+    },
+    {
+      "name": "School of Law",
+      "email": "flaw@simad.edu.so",
+      "website": "https://law.simad.edu.so/",
+      "slug": "school-of-law",
+      "programs": [
+        "Law"
+      ],
+      "administration_status": "official faculty subdomain returned a PHP fatal error during extraction"
+    },
+    {
+      "name": "School of Medicine and Health Sciences",
+      "email": "fmhs@simad.edu.so",
+      "website": "https://fmhs.simad.edu.so/",
+      "slug": "school-of-medicine-and-health-sciences",
+      "programs": [
+        "Medicine (MBBS)",
+        "Microbiology and Laboratory Sciences",
+        "Midwifery",
+        "Nursing",
+        "Public Health",
+        "Radiography"
+      ],
+      "administration": [
+        {
+          "name": "Mr Abdikarem Abdullahi Abdi",
+          "role": "Dean, FMHS",
+          "email": "Darwiish83@simad.edu.so"
+        },
+        {
+          "name": "Dr Najib Isse Dirie",
+          "role": "Lecturer",
+          "email": "drnajib@simad.edu.so",
+          "note": "The official administration page repeats this lecturer entry multiple times."
+        }
+      ],
+      "administration_source": "https://fmhs.simad.edu.so/administration/"
+    },
+    {
+      "name": "School of Engineering",
+      "email": "feng@simad.edu.so",
+      "website": "https://feng.simad.edu.so/",
+      "slug": "school-of-engineering",
+      "programs": [
+        "Architecture",
+        "Civil Engineering",
+        "Electrical Engineering",
+        "Telecommunication Engineering"
+      ],
+      "administration": [
+        {
+          "name": "Abdikarim Abi Hassan",
+          "role": "Dean, Faculty of Engineering",
+          "email": "Abdulkarimabi@simad.edu.so"
+        },
+        {
+          "name": "Mohammed Elhajalsoufi Mohammed",
+          "role": "Assistant Dean, Faculty of Engineering",
+          "email": "Mohamedelhajielsuffi@simad.edu"
+        },
+        {
+          "name": "Abdullahi Ibrahim Hussein",
+          "role": "Head of Civil Engineering Department",
+          "email": "koreabusan@simad.edu.so"
+        },
+        {
+          "name": "Amina Ahmed Hassan",
+          "role": "Head of Architecture Department",
+          "email": "ar.aminanur@simad.edu.so"
+        },
+        {
+          "name": "Ramadan Gilda Khartoum",
+          "role": "Civil Engineering Lab Technician",
+          "email": "ramadangela@simad.edu.so"
+        },
+        {
+          "name": "Anisa Ali Hussein",
+          "role": "Secretary, Faculty of Engineering",
+          "email": "eng.anisa@simad.edu.so"
+        }
+      ],
+      "administration_source": "https://feng.simad.edu.so/administration/"
+    },
+    {
+      "name": "SIMAD Master Programs",
+      "email": "gsinfo@simad.edu.so",
+      "website": "https://gs.simad.edu.so/",
+      "slug": "master-program",
+      "programs": [
+        "Master of Arts in International Relations and Diplomacy",
+        "Master of Arts in Public Policy",
+        "Master of Business Administration (MBA)",
+        "Master of Computer Science",
+        "Master of Data Science",
+        "Master of Education",
+        "Master of Laws in Criminal Law",
+        "Master of Procurement & Logistic Management",
+        "Master of Science in Accounting",
+        "Master of Science in Disaster Risk Management and Sustainable Development",
+        "Master of Science in Finance",
+        "Master of Science in Telecommunications & Networking"
+      ],
+      "administration": [
+        {
+          "name": "Dr. Abukar Mukhtar Omar",
+          "role": "Dean, Graduate School"
+        },
+        {
+          "name": "Mohamed Jama Mohamed",
+          "role": "Coordinator, SIMAD Programmes"
+        },
+        {
+          "name": "Omar Osman Haji",
+          "role": "Coordinator, OUM Programmes"
+        }
+      ],
+      "administration_source": "https://gs.simad.edu.so/administration/"
+    },
+    {
+      "name": "OUM Programs",
+      "email": "gsinfo@simad.edu.so",
+      "website": "https://gs.simad.edu.so/",
+      "slug": "oum-program",
+      "programs": [
+        "Master of Business Administration Program",
+        "Master of Information Technology Program",
+        "MBA in Project Management Program"
+      ],
+      "administration_source": "https://gs.simad.edu.so/administration/"
+    },
+    {
+      "name": "Executive Education",
+      "email": null,
+      "website": null,
+      "slug": "#",
+      "programs": [],
+      "administration_status": "no administration data found in extracted official sources"
+    }
+  ],
+  "secondary_or_possibly_stale_mentions": [
+    {
+      "source": "https://gs.simad.edu.so/academic-staff/",
+      "mention": "Ali Olow Jimale, PhD - Dean, Faculty of Management Sceinces",
+      "note": "This was found on the Graduate School academic staff page, not on the Management Sciences official subdomain; verify before treating as current."
+    }
+  ],
+  "missing_current_administration_data": [
+    "School of Management Sciences",
+    "School of Accountancy",
+    "School of Education",
+    "School of Law",
+    "Executive Education"
+  ],
+  "raw_files_created_during_extraction": [
+    "facebook_simaduni1999.html",
+    "simad_page_bundle.js",
+    "simad_schools.json",
+    "simad_programs.json",
+    "simad_posts_dean.json",
+    "wp_foc_pages.json",
+    "wp_fass_pages.json",
+    "wp_feco_pages.json",
+    "wp_fmhs_pages.json",
+    "wp_feng_pages.json",
+    "wp_gs_pages.json"
+  ]
+}
